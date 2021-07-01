@@ -4,7 +4,7 @@
         <div class="bar-back align-items-center navbar-s">
                 <div id="top"></div>
 
-                <nuxt-link to="lotto">
+                <nuxt-link to="/lotto">
                     <a class="mr-auto" ><i class="fas fa-chevron-left"></i> ย้อนกลับ</a>
                 </nuxt-link>
                 <a  class="btn btn-outline-primary btn-sm mr-1 text-primary text-nx">ดูรายการเเทง</a>
@@ -578,6 +578,7 @@
 import NumPad from './components/num_pad.vue'
 
 export default {
+    layout : 'default',
   data() {
     return {
       tabIndex: 0,

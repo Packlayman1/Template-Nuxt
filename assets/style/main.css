@@ -1,7 +1,15 @@
 body {
-    background-color: #dae4eb;
+    /* background-color: #dae4eb; */
 	font-family: "Lato","db_admanrounded_xregular","open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
+
+	background-image: url("../../assets/imge/wallpaper.jpg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
  }
 
  @font-face {

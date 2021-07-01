@@ -21,7 +21,7 @@
           <label>LOTTO</label>
         </a>
         <div class="w-full text-right">
-          <button class="btn-sm mt-2 mb-2 align-text-top">
+          <button class="btn btn-light btn-sm mt-2 mb-2 align-text-top" style="border: 1px solid rgb(108, 117, 125);">
             <i class="cil-reload mr-2" style="vertical-align: middle"></i>
             <span>320.25 ฿</span>
           </button>
