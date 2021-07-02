@@ -578,7 +578,13 @@
 import NumPad from './components/num_pad.vue'
 
 export default {
-    layout : 'default',
+  layout : 'default',
+   mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 1000)
+    })
+  },
   data() {
     return {
       tabIndex: 0,

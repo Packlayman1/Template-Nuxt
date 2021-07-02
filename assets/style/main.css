@@ -2,7 +2,6 @@ body {
     /* background-color: #dae4eb; */
 	font-family: "Lato","db_admanrounded_xregular","open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
-
 	background-image: url("../../assets/imge/wallpaper.jpg");
     min-height: 1000px;
     background-attachment: fixed;
@@ -23,6 +22,10 @@ body {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+	background: #3c3c3c;
+    color: white;
+    border-top: 2px solid #76b900;
+	height: 44px;
 }
 
 a:hover {

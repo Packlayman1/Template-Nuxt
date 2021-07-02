@@ -14,21 +14,34 @@
           <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-2 mb-2 px-2">
               <div class="flex pb-2">
-                <div class="flex-1 flex items-center">
-                  <div>
+                <div
+                  class="flex-1 flex"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div style="text-align: center; width: 100%">
                     <img
                       src="~/assets/imge/user.png"
                       class="inline-block"
                       width="35"
                     />
                     <label>UserName</label>
+                    <br />
+                    <span style="color: #eece70 !important; font-size: 16px">
+                      <i class="fas fa-credit-card"></i> : เครดิต
+                    </span>
+                    <br />
+                    <h3 style="font-size: 18px">320.25 THB</h3>
                   </div>
                 </div>
-                <div class="flex-1">
+                <!-- <div class="flex-1">
                   <span> <i class="fas fa-credit-card"></i> : เครดิต </span>
                   <br />
                   <h3 style="font-size: 18px">320.25 THB</h3>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -267,11 +280,21 @@
         </div>
 
         <div class="topbox px-2 text-center d-flex">
-            <marquee behavior="left" direction="2" onmouseover="this.stop()" onmouseout="this.start()" class="rounded px-1 pt-2 pb-1 mb-0 mr-1 marqueemain">ยินดีต้อนรับเข้าสู่ Lotto</marquee>
+          <marquee
+            behavior="left"
+            direction="2"
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            class="rounded px-1 pt-2 pb-1 mb-0 mr-1 marqueemain"
+            >ค่าคอมแนะนำเพื่อน 0.00THB</marquee
+          >
 
-            <a style="width: 58%;" class="btn btn-dark border border-secondary pb-0 btn-download-app">
-                <i class="fas fa-arrow-circle-down"></i> ดาวน์โหลดแอป
-            </a>
+          <a
+            style="width: 100%; font-size: 15px"
+            class="btn btn-dark border border-secondary pb-0 btn-download-app"
+          >
+            <i class="fas fa-arrow-circle-down"></i> ระบบแนะนำ
+          </a>
         </div>
 
         <!-- <div class="flex pb-2">
@@ -302,6 +325,17 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 1000)
+    })
+  },
+}
+</script>
 
 <style>
 .card-menu {
@@ -479,7 +513,7 @@
 }
 
 .topbox a {
-    color: blanchedalmond;
-    text-decoration: none;
+  color: blanchedalmond;
+  text-decoration: none;
 }
 </style>
